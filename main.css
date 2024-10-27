@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "gaby";
+    src: url("fonts/Gabriela.ttf") format("truetype");
+}
+body{
+    font-family: "gaby";
+    background-color: #f8f9fa;
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 3rem;
+}
+
+.card {
+    border: none;
+}
+
+.card-footer {
+    background-color: white;
+    border: none;
+    min-height: 6em;
+}
+
+p {
+    text-align: justify;
+}
