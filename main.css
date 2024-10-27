@@ -5,11 +5,11 @@
 body{
     font-family: "gaby";
     background-color: #f8f9fa;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 h2 {
     font-size: 2.5rem;
@@ -30,6 +30,7 @@ h2 {
 
 p {
     text-align: justify;
+    margin: 0 20px;
 }
 
 .carousel-caption{
@@ -48,10 +49,10 @@ p {
 
 @media only screen and (max-width: 450px) {
     h1 {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
 
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 }
