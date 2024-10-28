@@ -27,10 +27,14 @@ h2 {
     border: none;
     min-height: 6em;
 }
+.inner-container{
+    margin: 0 20px;
+}
 
 p {
     text-align: justify;
-    margin: 0 20px;
+    margin: 20px 0;
+    text-indent: 40px;
 }
 
 .carousel-caption{
