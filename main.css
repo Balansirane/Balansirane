@@ -80,3 +80,8 @@ p {
         font-size: 1.8rem;
     }
 }
+
+.reg_font{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+}
