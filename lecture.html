@@ -6,6 +6,55 @@
     <link rel="shortcut icon" type="image/jpg" href="/images/ico.png">
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/main.css?v5" rel="stylesheet">
+    <style>
+        /* Enhanced carousel controls */
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 1;
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 24px;
+            height: 24px;
+        }
+        
+        /* Enhanced carousel indicators */
+        .carousel-indicators [data-bs-target] {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 2px solid rgba(0, 0, 0, 0.3);
+            margin: 0 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-indicators [data-bs-target].active {
+            background-color: #fff;
+            border-color: rgba(0, 0, 0, 0.6);
+            transform: scale(1.2);
+        }
+        
+        .carousel-indicators [data-bs-target]:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            transform: scale(1.1);
+        }
+    </style>
     <title>Балансиране - Лекция за Акашовите записи</title>
     <meta property="og:title" content="Осъзнаване на силата ни чрез Акашовите записи - Лекция с Елица Узунова">
     <meta property="og:description" content="Присъединете се за трансформираща лекция от Елица Узунова на тема Акашови записи в Медицински център Хирон.">
@@ -46,7 +95,36 @@
     <div class="container mt-5">
         <div class="inner-container">
             <img src="/images/Poster.jpg" class="d-block w-100" alt="Лекция на тема Акашови записи от Елица Узунова, Медицински център Хирон">
-            <p>
+            
+            <!-- Image Carousel -->
+            <div id="lectureCarousel" class="carousel slide mt-4 mb-4" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#lectureCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#lectureCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#lectureCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/images/0-02-05-512d375123e901e9a969e213498a55cd32d74ee37257d03323f598c14cb2ffe1_dfc77316fbc9bf47.jpg" class="d-block w-100" alt="Лекция изображение 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/0-02-05-abdbbfe9abbab9806c4ee86a6cfed37a8b0495b870663697b08610bd77858782_aff3a5bdbc433eb.jpg" class="d-block w-100" alt="Лекция изображение 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/0-02-05-fe1703ed9f6ad1b2e2cb2b2082451f5a2c9e6e3f694f670ce5a5363e968feeef_d1705fb16cb85857.jpg" class="d-block w-100" alt="Лекция изображение 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#lectureCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#lectureCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <p></p>
                 На 23 ти ноември от 10ч в Медицински център „Хирон“ ще се
                 проведе лекция-беседа на тема „Осъзнаване на собствената ни сила чрез
                 Акашовите записи“, с лектор Елица Узунова.
